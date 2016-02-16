@@ -1,0 +1,54 @@
+body{
+  font-family: Helvetica,Arial,sans-serif;
+}
+
+.gif{
+margin-left:auto;
+margin-right:auto;
+width:400px;
+margin-top:150px;
+margin-bottom:auto;
+position:relative;
+}
+.left_nav{
+  padding:15px;
+}
+.post-title{
+margin-bottom:90px;
+
+}
+td{
+ padding:30px;
+}
+.date{
+  margin-top:10px;
+ font-size:9pt;
+ margin-left:auto;
+}
+.top_nav{
+  margin-left:auto;
+  margin-right:auto;
+  width:855px;
+  padding:30px;
+  font-family: Helvetica,Arial,sans-serif;
+  font-weight: normal;
+  letter-spacing: 2px;
+  line-height: 1.4em;
+                        line-height: 1em;
+                            text-transform: uppercase;
+                                letter-spacing: 10px;
+                                    font-weight: 400;
+                                        font-style: normal;
+                                            font-size: 80px;
+                                                text-align: center;
+                                                    display: block;
+ } 
+.tumblr_feed{
+background-color:yellow;
+}
+.container{
+  position:relative;
+  margin-left:auto;
+  margin-right:auto;
+width:856px;
+}
