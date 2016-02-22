@@ -27,6 +27,11 @@ KAF READING SERIES
   </div>
   </td>
   <td width="400px" valign="top">
+    <%if @posts == []%>
+       <div class = "body">
+       There are no more posts to show
+       </div>
+    <%end%>
     <%@posts.each do |post|%>
        <div class="post-title">
           <div class="title">
@@ -45,5 +50,9 @@ KAF READING SERIES
           </div>
         </div>
     <%end%>
+    <%if @back >= 0 then%>
+      <%=link_to "Back", home_path(:offset => @back)%>
+    <%end%>
+    <%=link_to "Next", home_path(:offset => @next)%>
   </td>
 </div>
