@@ -32,38 +32,8 @@ KAF COLLECTIVE
   <table>
     <tr>
   <td valign="top">
-    <%if @posts == []%>
-       <div class = "body">
-       There are no more posts to show
-       </div>
-    <%end%>
-    <%@posts.each do |post|%>
-       <div class="post-title">
-          <div class="title">
-            <%=strip_tags(post["caption"])%>
-          </div>
-          
-          <div class="body">
-            <%myphoto = post["photos"]%>
-            <%if myphoto.class == Array %>
-                <%=image_tag myphoto[0]["alt_sizes"][0]["url"]%>
-            <%end%>
-            <%=raw post["body"]%>
-            <div class="date">
-            <%=DateTime.new(post["date"].split(' ').first.split('-').first.to_i, post["date"].split(' ').first.split('-').second.to_i, post["date"].split(' ').first.split('-').third.to_i).strftime("Printed on %m/%d/%Y") %>
-            </div>
-          </div>
-        </div>
-    <%end%>
-    <div class="next">
-      <%if @back >= 0 then%>
-      <%= link_to(home_path(:offset => @back)) do %>
-      <i class="pe-7s-angle-left pe-3x pe-va"></i>
-      <%end%>
-      <%end%>
-      <%= link_to(home_path(:offset => @next)) do %>
-      <i class="pe-7s-angle-right pe-3x pe-va"></i>
-      <%end%>
+     tmhaviv (at) gmail (dot) com
     </div>
   </td>
 </div>
+
