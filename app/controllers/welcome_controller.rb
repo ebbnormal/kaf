@@ -19,9 +19,7 @@ class WelcomeController < ApplicationController
     @next = @offset.to_i + 1
     @back = @offset.to_i - 1
     client = Tumblr::Client.new
-    Rails.logger.debug(client)
     blog = client.posts("kafcollective.tumblr.com", :limit => 7, :offset => tumblr_offset)
-    Rails.logger.debug(blog)
     @posts = blog["posts"]
   end
 
@@ -36,9 +34,7 @@ class WelcomeController < ApplicationController
     @next = @offset.to_i + 1
     @back = @offset.to_i - 1
     client = Tumblr::Client.new
-    Rails.logger.debug(client)
     blog = client.posts("kafcollective.tumblr.com", :limit => 7, :offset => tumblr_offset)
-    Rails.logger.debug(blog)
     @posts = blog["posts"]
   end
 end
